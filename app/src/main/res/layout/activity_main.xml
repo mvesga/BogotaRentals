@@ -68,9 +68,6 @@
                             android:id="@+id/imageView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignLeft="@+id/textView18"
-                            android:layout_alignStart="@+id/textView18"
-                            android:layout_below="@+id/imageView3"
                             android:layout_marginBottom="10dp"
                             android:layout_marginRight="10dp"
                             android:layout_marginTop="10dp"
@@ -139,6 +136,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/imageView10"
                         android:layout_toStartOf="@+id/imageView10"
+                        android:layout_toLeftOf="@+id/imageView10"
                         android:layout_weight="0">
 
                         <ImageView
@@ -147,9 +145,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentRight="true"
-                            android:layout_below="@+id/imageView10"
                             android:layout_marginTop="0dp"
-                            android:layout_toStartOf="@+id/imageView10"
                             android:scaleType="centerCrop"
                             app:srcCompat="@drawable/main_pic" />
 
@@ -161,7 +157,7 @@
                             android:layout_alignLeft="@+id/heroimage"
                             android:layout_alignStart="@+id/heroimage"
                             android:layout_marginBottom="23dp"
-                            app:srcCompat="@drawable/price_shadow" />
+                            app:srcCompat="@drawable/price_shadow"/>
 
                         <TextView
                             android:id="@+id/textprice"
@@ -260,7 +256,7 @@
                         android:layout_below="@+id/imageView9"
                         android:layout_marginLeft="15dp"
                         android:layout_weight="0"
-                        android:text="Telephone: +57315112233"/>
+                        android:text="Telephone: +57315112233" />
 
                     <TextView
                         android:id="@+id/email"
@@ -273,22 +269,22 @@
                         android:layout_below="@+id/imageView9"
                         android:layout_marginLeft="15dp"
                         android:layout_weight="0"
-                        android:text="email: contact@bogotarentals.co"/>
+                        android:text="email: contact@bogotarentals.co" />
 
                     <TextView
                         android:id="@+id/website"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                         android:layout_alignParentTop="true"
-                            android:layout_alignParentRight="true"
                         android:layout_alignEnd="@+id/textView12"
                         android:layout_alignLeft="@+id/textView11"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
                         android:layout_alignRight="@+id/textView12"
                         android:layout_alignStart="@+id/textView11"
                         android:layout_below="@+id/imageView9"
                         android:layout_marginLeft="15dp"
                         android:layout_weight="0"
-                        android:text="website: www.bogotarentals.co"/>
+                        android:text="website: www.bogotarentals.co" />
 
                     <TextView
                         android:id="@+id/checkin"
@@ -317,22 +313,6 @@
 
 
                 </LinearLayout>
-
-                <RelativeLayout
-                    android:id="@+id/Overview"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/Booking"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                </RelativeLayout>
             </FrameLayout>
         </LinearLayout>
     </TabHost>
